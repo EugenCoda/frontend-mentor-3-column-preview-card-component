@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/EugenCoda/frontend-mentor-3-column-preview-card-component)
-- Live Site URL: [3 Column Preview Card Component](https://your-live-site-url.com)
+- Live Site URL: [3 Column Preview Card Component](https://3-column-preview-card-component-frontend-challenge.netlify.app/)
 
 ## My process
 
