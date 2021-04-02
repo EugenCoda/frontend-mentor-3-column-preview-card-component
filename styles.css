@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Paragraphs */
+  --neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* Background, headings, buttons */
+  --neutral-very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--neutral-very-light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: var(--neutral-very-light-gray);
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 100px;
+}
+
+section {
+  margin-top: 50px;
+  width: 70%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--neutral-transparent-white);
+}
+
+section div {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+img {
+  margin-bottom: 35px;
+  width: 70px;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+  border-radius: 7px 0 0 7px;
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 7px 7px 0;
+}
+
+.btn {
+  margin-top: auto;
+  width: 160px;
+  padding: 14px 10px;
+  border: 3px solid var(--neutral-very-light-gray);
+  border-radius: 80px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: var(--neutral-very-light-gray);
+}
+
+.btn.sedan {
+  color: var(--bright-orange);
+}
+
+.btn.suv {
+  color: var(--dark-cyan);
+}
+
+.btn.lux {
+  color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+  cursor: pointer;
+  outline: none;
+  background-color: initial;
+  color: var(--neutral-very-light-gray);
+}
+
+.btn:focus {
+  cursor: pointer;
+  outline: none;
+}
+
+.attribution {
+  margin-top: 30px;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+}
+.attribution a {
+  color: var(--bright-orange);
+}
+
+@media (max-width: 1000px) {
+  body {
+    height: 100%;
+  }
+
+  section {
+    width: 85%;
+    grid-template-columns: 1fr;
+  }
+
+  .sedans {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 7px 7px;
+  }
+
+  p {
+    margin-bottom: 25px;
+    font-size: 1rem;
+  }
+}
